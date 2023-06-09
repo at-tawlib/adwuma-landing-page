@@ -13,7 +13,7 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: #532F18;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #532F18;
 }
 
 body {
@@ -107,8 +107,11 @@ body {
 
 .intro {
     min-height: 400px;
-    background-color: red;
+    background-image: url("https://images.pexels.com/photos/289665/pexels-photo-289665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-size: cover;
     align-items: center;
-    padding-top: 100px;
+    padding: 100px 0px;
+    margin: 0px;
     justify-content: center;
 }
