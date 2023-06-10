@@ -1,117 +1,226 @@
-/*
- * Globals
- */
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #532F18;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
-}
-
-
-/*
- * Base structure
- */
-
-html,
-body {
-  height: 100%;
-  background-color: #532F18;
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-  display: -ms-flexbox;
-  display: flex;
-  color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    padding: auto;
 }
 
-.cover-container {
-  /* max-width: 42em; */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #532F18;
+    color: white;
+    transition: 0.5s all ease;
+    position: sticky;
+    top: 0;
 }
 
-
-/*
- * Header
- */
-.masthead {
-  margin-bottom: 2rem;
+.navbar .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
 }
 
-.masthead-brand {
-  margin-bottom: 0;
+.navbar .container .logo {
+    font-size: 34px;
+    font-weight: bold;
 }
 
-.nav-masthead .nav-link {
-  padding: .25rem 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, .5);
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
+.navbar .container .links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
 }
 
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
+.navbar .container .links .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
 }
 
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
+.navbar .container .links .user img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+.navbar .container .links .user .options {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    font-weight: 300;
+    z-index: 999;
 }
 
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
+.navbar .container .links button {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: transparent;
 }
 
-
-/*
- * Cover
- */
-.cover {
-  padding: 0 1.5rem;
-}
-.cover .btn-lg {
-  padding: .75rem 1.25rem;
-  font-weight: 700;
+.navbar .container .links button:hover {
+    background-color: white;
+    color: #532F18;
 }
 
-
-/*
- * Footer
- */
-.mastfoot {
-  color: rgba(255, 255, 255, .5);
+.navbar hr {
+    width: 100%;
+    height: 0;
+    border: 0.5px solid lightgrey;
 }
 
+.navbar .menu {
+    width: 1400px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    color: white;
+    background-color: #532F18;
+    font-family: "Montserrat", sans-serif;
+}
+/* ================ INTRO ====================== */
 .intro {
-    min-height: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url("https://images.pexels.com/photos/289665/pexels-photo-289665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-color: #013914;
     background-position: center;
     background-size: cover;
+    color: white;
+}
+
+.intro .container {
+    height: 600px;
+    width: 1300px;
+    display: flex;
     align-items: center;
-    padding: 100px 0px;
-    margin: 0px;
     justify-content: center;
+}
+
+.intro .container .left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.intro .container .left h1 {
+    font-size: 50px;
+    text-align: center;
+    mix-blend-mode: difference;
+}
+
+.intro .container .left h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.intro .container .left .services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.intro .container .left .services button {
+    color: white;
+    width: maxcontent;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* =================feature =============== */
+.feature {
+    background-color: beige;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 50px;
+    background-image: url('https://images.pexels.com/photos/16850260/pexels-photo-16850260/free-photo-of-carpenter-working-with-planks.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    padding-bottom: 50px;
+}
+
+.feature .container {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    padding: 40px 100px;
+}
+
+.feature .container .item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feature .container .item &:first-child {
+    flex: 2;
+}
+
+.feature .container .item &:last-child {
+    flex: 3;
+}
+
+
+.feature .container .item img {
+    width: 100%;
+}
+
+.feature .container .item h1 {
+    font-weight: 800;
+    margin: 20px 0px;
+    color: #532F18;
+}
+
+.feature .container .item .title {
+    display: flex;
+    color: #532F18;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.feature .container .item .title img {
+    width: 24px;
+    height: 24px;
+}
+
+.feature .container .item p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+.feature .container .item video {
+    width: 600px;
 }
