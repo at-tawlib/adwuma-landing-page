@@ -7,6 +7,12 @@ body {
     padding: auto;
 }
 
+.link {
+    text-decoration-style: none;
+    text-decoration: none;
+    color: white;
+}
+
 .navbar {
     display: flex;
     flex-direction: column;
