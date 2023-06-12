@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
@@ -13,20 +13,17 @@ body {
     align-items: center;
     background-color: #532F18;
     color: white;
-    transition: 0.5s all ease;
-    position: sticky;
-    top: 0;
 }
 
 .navbar .container {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 .navbar .container .logo {
-    font-size: 34px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -46,30 +43,6 @@ body {
     position: relative;
 }
 
-.navbar .container .links .user img {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.navbar .container .links .user .options {
-    position: absolute;
-    top: 50px;
-    right: 0;
-    padding: 20px;
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-    border: 1px solid lightgray;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 200px;
-    font-weight: 300;
-    z-index: 999;
-}
-
 .navbar .container .links button {
     color: white;
     padding: 10px 20px;
@@ -79,30 +52,9 @@ body {
     background-color: transparent;
 }
 
-.navbar .container .links button:hover {
-    background-color: white;
-    color: #532F18;
-}
-
-.navbar hr {
-    width: 100%;
-    height: 0;
-    border: 0.5px solid lightgrey;
-}
-
-.navbar .menu {
-    width: 1400px;
-    padding: 10px 0px;
-    display: flex;
-    justify-content: space-between;
-    font-weight: 300;
-    color: white;
-    background-color: #532F18;
-    font-family: "Montserrat", sans-serif;
-}
 /* ================ INTRO ====================== */
 .intro {
-    height: 600px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,113 +66,25 @@ body {
 }
 
 .intro .container {
-    height: 600px;
-    width: 1300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.intro .container .left {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 30px;
 }
 
-.intro .container .left h1 {
-    font-size: 50px;
-    text-align: center;
-    mix-blend-mode: difference;
-}
-
-.intro .container .left h2 {
-    font-size: 30px;
-    text-align: center;
-}
-
-.intro .container .left .services {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.intro .container .left .services button {
+.intro button {
     color: white;
-    width: maxcontent;
-    height: 50px;
-    background-color: transparent;
-    border: 1px solid white;
-    padding: 5px 10px;
-    border-radius: 8px;
-    cursor: pointer;
+    width: 200px;
+    border-color: white;
 }
 
-/* =================feature =============== */
-.feature {
-    background-color: beige;
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 50px;
-    background-image: url('https://images.pexels.com/photos/16850260/pexels-photo-16850260/free-photo-of-carpenter-working-with-planks.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    padding-bottom: 50px;
+/* =================features =============== */
+.features {
+    padding: 30px 0px;
 }
 
-.feature .container {
-    display: flex;
-    align-items: center;
-    gap: 200px;
-    padding: 40px 100px;
-}
-
-.feature .container .item {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.feature .container .item &:first-child {
-    flex: 2;
-}
-
-.feature .container .item &:last-child {
-    flex: 3;
-}
-
-
-.feature .container .item img {
-    width: 100%;
-}
-
-.feature .container .item h1 {
-    font-weight: 800;
-    margin: 20px 0px;
+.features h1 {
     color: #532F18;
-}
-
-.feature .container .item .title {
-    display: flex;
-    color: #532F18;
-    align-items: center;
-    gap: 10px;
-    font-weight: 800;
-    font-size: 26px;
-    margin-top: 10px;
-}
-
-.feature .container .item .title img {
-    width: 24px;
-    height: 24px;
-}
-
-.feature .container .item p {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 28px;
-    letter-spacing: 2px;
-}
-
-.feature .container .item video {
-    width: 600px;
 }
