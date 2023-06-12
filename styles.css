@@ -95,11 +95,11 @@ body {
     padding: 40px;
 }
 
-.about-card .card-body {
+.about .card-body {
     margin: 0px 50px;
 }
 
-.about-card .card-body p {
+.about .card-body p {
     font-size: 18px;
     text-align: start;
 }
