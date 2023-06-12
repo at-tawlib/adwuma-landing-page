@@ -88,3 +88,22 @@ body {
 .features h1 {
     color: #532F18;
 }
+
+/* ================= about ============= */
+.about-card {
+    background-color: #f7efea;
+    padding: 40px;
+}
+
+.about-card .card-body {
+    margin: 0px 50px;
+}
+
+.about-card .card-body p {
+    font-size: 18px;
+    text-align: start;
+}
+
+.socials i {
+    padding: 10px 10px;
+}
